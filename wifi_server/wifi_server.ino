@@ -5,16 +5,16 @@ WiFiServer server(80);
 
 #define led D3
 void setup()
- {
+{
   Serial.begin(115200);
-WiFi.begin("raaaj","malum nai");
+  WiFi.begin("raaaj","malum nai");
 while(WiFi.status()!=WL_CONNECTED)
 {
 Serial.print("..");
 delay(400);
 }
 Serial.println();
-Serial.println("nodemcu is connected!");
+Serial.println("nodemcu is connected.......!");
 Serial.println(WiFi.localIP());
 server.begin();
 pinMode(led, OUTPUT);
