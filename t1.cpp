@@ -228,6 +228,8 @@ void loop() {
     for (int i = 0; i < 8; i++) {
         if (cdevice[i] > 0) {
           current_cnt++;
+        }else{
+          sdevice[i]=0;
         }
     }
     
